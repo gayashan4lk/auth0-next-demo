@@ -1,7 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
 import { auth0 } from '@/lib/auth0'
-import Image from 'next/image'
 
 export default async function Home() {
 	const session = await auth0.getSession()
