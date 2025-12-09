@@ -4,6 +4,8 @@ import { auth0 } from '@/lib/auth0'
 export default async function Home() {
 	const session = await auth0.getSession()
 	const user = session?.user
+	console.log('User session:', session)
+	console.log('User info:', user)
 
 	return (
 		<main className="mx-10">
