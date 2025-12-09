@@ -27,9 +27,7 @@ export default async function Home() {
 					<Button children={<a href="/auth/login">Log In</a>} />
 				)}
 			</div>
-			<div className="mt-4">
-				<Button children={<a href="/auth/logout">Log Out</a>} />
-			</div>
+			<div className="mt-4">{user && <Button children={<a href="/auth/logout">Log Out</a>} />}</div>
 		</main>
 	)
 }
